@@ -24,13 +24,21 @@ ul {
 body {
     background: #231f20;
     font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+}
+
+.background {
+    background: url('../img/github_background.png') right no-repeat ;
+    background-size: 100%;
+    background-position-y: fixed;
+    background-position-x: initial;
+    min-height: 700px;
 }
 
 .container {
     max-width: 700px;
     margin: 0 auto;
-    height: 640px;
-    background: url('../img/github_background.png') right no-repeat;
+    height: 100%;
 }
 
 h1 {
@@ -45,16 +53,15 @@ h1 {
     display: flex;
     max-width: 700px;
     align-content: space-between;
-    flex-wrap: wrap;
 }
 
 .search-bar input {
-    flex: 1 1 400px;
+    flex: 1 1 450px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     padding: 20px 30px;
     font-size: 1.125rem;
-    height: 35px;
+    height: 25px;
     border: none;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
 }
@@ -67,20 +74,19 @@ h1 {
     flex: 1 1 50px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    height: 75px;
+    height: 65px;
     border: none;
     background: #5DD9C1;
     cursor: pointer;
-    box-shadow: -2px 4px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
 }
 
 .search-bar button img {
     margin: 0 auto;
 }
 
-button.fas.fa-search {
-    background: url('../img/icons8-search.svg');
-    height: 20px;
-    width: 20px;
+.list li p {
+    font-size: 2rem;
+    color: white;
+    margin: 10px 0;
 }
-
