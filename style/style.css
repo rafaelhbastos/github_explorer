@@ -28,19 +28,11 @@ body {
     background-size: cover;
 }
 
-.background {
-    background: url('../img/github_background.png') right no-repeat ;
-    background-size: 100%;
-    background-position-y: fixed;
-    background-position-x: initial;
-    min-height: 700px;
-
-}
-
 .container {
     max-width: 700px;
     margin: 0 auto;
     height: 100%;
+    padding: 0 10px;
 }
 
 h1 {
@@ -104,8 +96,8 @@ h1 {
 }
 
 .list img {
-    max-width: 70px;
-    max-height: 70px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
 }
 
@@ -119,6 +111,7 @@ h1 {
 .list .repository a {
     color: #fff;
     font-size: 1.125rem;
+    width: 300px;
 }
 
 .list .repository a:hover {
@@ -127,20 +120,29 @@ h1 {
 
 .list .repository p {
     font-size: 0.875rem;
-    color: #ACFCD9
+    color: #ACFCD9;
+    max-width: 400px;
 }
 
-
 .list .arrow-right img {
-    top:40px;
     position: absolute;
+    top:40px;
     right: 30px;
     padding: 10px;
     height: 20px;
     width: 20px;
-    transition: .9s;
+    transition: .5s;
 }
 
 .list .arrow-right img:hover {
     transform: scale(1.8)
 }
+
+.error-message {
+    margin-top: 100px;
+    color: #A0A0A0;
+    font-size: 3rem;
+    text-align: center;
+    font-style: italic;
+}
+
