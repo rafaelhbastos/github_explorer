@@ -1,4 +1,3 @@
-import fetchUser from './modules/fetch-user.js'
+import getSearch from './modules/get-search.js'
 
-
-fetchUser('https://api.github.com/users/rafaelhbastos');
+getSearch();

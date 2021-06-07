@@ -1,10 +1,9 @@
 export default function fillElement (user,userRepos) {
     const container = document.querySelector('.container');
-
     const list = document.createElement('ul');
     list.classList.add('list');
 
-     userRepos.forEach(item => {
+    userRepos.forEach(item => {
         const newElement = document.createElement('li');
 
         const elementPhoto = new Image();
@@ -21,7 +20,7 @@ export default function fillElement (user,userRepos) {
 
         const repositoryText = document.createElement('p');
         repositoryText.innerText = item.description;
-        
+            
         const elementArrow = document.createElement('span');
         elementArrow.classList.add('arrow-right');
 
@@ -32,7 +31,7 @@ export default function fillElement (user,userRepos) {
         const arrowImg = new Image();
         arrowImg.src = './img/arrow-right.png';
         arrowImg.alt = 'arrow-right';
-        
+            
         elementRepository.appendChild(repositoryLink);
         elementRepository.appendChild(repositoryText);
 

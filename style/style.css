@@ -74,6 +74,13 @@ h1 {
     background: #5DD9C1;
     cursor: pointer;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
+    transition: .2s;
+}
+
+.search-bar button:hover {
+    transform: scale(1.1);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .search-bar button img {
