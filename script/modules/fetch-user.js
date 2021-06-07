@@ -9,12 +9,8 @@ export default async function fetchUser (url) {
         const userJSON = await user.json(); 
         const userRepos = await fetch(`${url}/repos`);
         const userReposJSON = await userRepos.json();
-        if(userJSON.id){
-            if(!userReposJSON.length) {
-                repoError();
-            }
-        }
         removeElement();
+        repoError(userJSON, userReposJSON);
         fillElement(userJSON, userReposJSON);
     } catch {  
         userError();
