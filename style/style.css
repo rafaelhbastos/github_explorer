@@ -92,14 +92,6 @@ h1 {
     margin: 0 auto;
 }
 
-.list {
-    display: none;
-}
-
-.list.active {
-    display: block;
-}
-
 .list li{
     display: flex;
     margin: 20px auto 10px auto;
