@@ -7,6 +7,7 @@ export default function fillElement (user,userRepos) {
         const newElement = document.createElement('li');
 
         const elementPhoto = new Image();
+        elementPhoto.classList.add('profile-photo');
         elementPhoto.src = user.avatar_url;
         elementPhoto.alt = 'default-photo';
 

@@ -32,7 +32,7 @@ body {
     max-width: 700px;
     margin: 0 auto;
     height: 100%;
-    padding: 0 10px;
+    padding: 10px 10px;
 }
 
 h1 {
@@ -102,10 +102,11 @@ h1 {
     position: relative;
 }
 
-.list img {
+.list li .profile-photo {
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    align-self: center;
 }
 
 .list .repository {
@@ -128,17 +129,17 @@ h1 {
 .list .repository p {
     font-size: 0.875rem;
     color: #ACFCD9;
-    max-width: 400px;
+    max-width: 350px;
 }
 
 .list .arrow-right img {
     position: absolute;
-    top:40px;
+    top: calc(50% - 20px);
     right: 30px;
     padding: 10px;
     height: 20px;
     width: 20px;
-    transition: .5s;
+    transition: .3s;
 }
 
 .list .arrow-right img:hover {
@@ -174,5 +175,106 @@ h1 {
     color: #A0A0A0;
 }
 
+@media (min-width: 440px) and (max-width: 600px) {
+    .search-bar input {
+        flex: 1 1 300px;
+    }
+    .search-bar button {
+        flex: 1 1 50px;
+    }
+    .list li {
+        padding: 15px;
+    }
+    .list li .profile-photo {
+        width: 50px;
+        height: 50px;
+    }
+    .list .repository a {
+        width: 200px;
+    }
+    .list .repository p {
+        max-width: 250px;
+    }
+    .list .arrow-right img {
+        right: 10px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 440px) {
+    .search-bar input {
+        flex: 1 1 150px;
+    }
+    .search-bar button {
+        flex: 1 1 50px;
+    }
+    .list li {
+        padding: 10px;
+    }
+    .list li .profile-photo{
+        display: none;
+    }
+    .list .repository {
+        margin-left: 0;
+    }
+    .list .repository a {
+        max-width: 200px;
+    }
+    .list .repository p {
+        max-width: 200px;
+    }
+    .list .arrow-right img {
+        right: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .container h1 {
+        font-size: 2rem;
+    }
+    .search-bar {
+        flex-wrap: wrap;
+    }
+    .search-bar input {
+        font-size: 0.875rem;
+        flex-basis: 100px;
+        padding: 10px;
+    }
+    .search-bar button {
+        height: 45px;
+    }
+    .search-bar button img {
+        width: 20px;
+        height: 20px;
+    }
+    .search-bar input {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px
+    }
+    .search-bar button {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .list li {
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    .list li .profile-photo{
+        display: none;
+    }
+    .list .repository {
+        margin-left: 0;
+    }
+    .list .repository a {
+        max-width: 200px;
+        font-size: 0.875rem;
+    }
+    .list .repository p {
+        max-width: 200px;
+        font-size: 0.75rem;
+    }
+    .list .arrow-right img {
+        display: none;
+    }
+}
 
 
