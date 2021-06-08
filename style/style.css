@@ -92,6 +92,14 @@ h1 {
     margin: 0 auto;
 }
 
+.list {
+    display: none;
+}
+
+.list.active {
+    display: block;
+}
+
 .list li{
     display: flex;
     margin: 20px auto 10px auto;
@@ -152,4 +160,27 @@ h1 {
     text-align: center;
     font-style: italic;
 }
+
+.loader {
+    margin: 20px auto 10px auto;
+    width: 250px;
+    height: 250px;
+    background: url('../img/loader.png') center no-repeat;
+    background-size: 200px;
+    animation: spin 1.2s linear infinite ;
+}
+
+@keyframes spin{
+    0% { background-size: 200px;}
+    50% { background-size: 220px;}
+    100% { background-size: 200px;}
+}
+
+.loader-text {
+    font-size: 2rem;
+    text-align: center;
+    color: #A0A0A0;
+}
+
+
 
