@@ -4,6 +4,7 @@ import removeElement from './remove-element.js'
 import fillElement from './fill-element.js'
 import loading from './loading.js'
 import endLoading from './end-loading.js'
+import listSmoothly from './list-smoothly.js'
 
 export default async function fetchUser (url) {
     try {
@@ -19,5 +20,6 @@ export default async function fetchUser (url) {
         userError();
     } finally {
         endLoading();
+        listSmoothly();
     }
 }

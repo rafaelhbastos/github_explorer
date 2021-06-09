@@ -5,5 +5,4 @@ export default function endLoading() {
 
     container.removeChild(loading);
     container.removeChild(loadingText);
-
 }

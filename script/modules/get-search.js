@@ -17,7 +17,7 @@ export default function getSearch () {
         if (event.key === 'Enter') {
             const user = input.value;
             input.value = '';
-            fetchUser(`https://api.github.com/users/${user}`);
+            fetchUser(`https://api.github.com/users/${user}`);  
         }
     }
 }

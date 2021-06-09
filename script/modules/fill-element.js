@@ -2,9 +2,9 @@ export default function fillElement (user,userRepos) {
     const container = document.querySelector('.container');
     const list = document.createElement('ul');
     list.classList.add('list');
-
     userRepos.forEach(item => {
         const newElement = document.createElement('li');
+        newElement.setAttribute("data-anime", "appear");
 
         const elementPhoto = new Image();
         elementPhoto.classList.add('profile-photo');
